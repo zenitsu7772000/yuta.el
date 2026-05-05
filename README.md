@@ -13,6 +13,13 @@ It provides:
 - Native lightweight LSP autocomplete automation (no Corfu/Company required)
 - Yuta-native LSP popup suggestions
 
+<img width="1206" height="728" alt="01" src="https://github.com/user-attachments/assets/89aa0200-93e0-4c3e-afca-0fc158305cbe" />
+
+<img width="1202" height="733" alt="02" src="https://github.com/user-attachments/assets/af3ca244-80c8-45ee-a5b9-65fc4642bdbd" />
+
+<img width="1202" height="736" alt="03" src="https://github.com/user-attachments/assets/72941ec7-9273-4498-9e65-6936c060dca5" />
+
+
 ## Features
 
 - Dual mode architecture:
