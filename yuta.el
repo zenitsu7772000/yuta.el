@@ -289,10 +289,11 @@ Keep this nil for maximum stability with Evil/window-manager setups."
 
 (defun yuta--project-root ()
   "Return the project root for the *current* `default-directory'."
-  (or (when-let ((proj (project-current nil)))
-        (project-root proj))
-      (locate-dominating-file default-directory ".git")
-      default-directory))
+  (expand-file-name
+   (or (when-let ((proj (project-current nil)))
+         (project-root proj))
+       (locate-dominating-file default-directory ".git")
+       default-directory)))
 
 (defun yuta--bat-cmd (file &optional line)
   "Return a shell command string to preview FILE with bat or cat.
