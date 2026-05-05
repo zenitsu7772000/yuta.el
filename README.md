@@ -207,29 +207,13 @@ If you want a faster but heavier feel:
 
 If your editor becomes unresponsive after popup close, keep child-frame mode disabled.
 
-## Troubleshooting
+## Support / Donate
 
-1. **Popup opens but keys don't work**
-   - Re-evaluate `yuta.el` (`M-x eval-buffer`)
-   - Confirm Evil is loaded before testing Evil-specific keys
+If this project helps you, you can support development:
 
-2. **No recent files shown**
-   - Enable `recentf-mode`
-   - Ensure files still exist on disk
-
-3. **Grep preview shows odd characters**
-   - Yuta already strips ANSI color output
-   - Ensure your grep/rg aliases are not forcing unusual formatting
-
-4. **Tool not found errors**
-   - Install missing binaries (`rg`, `fd`, `fzf`, `bat`)
-
-## Roadmap
-
-- Better syntax-highlighted preview without shelling out for every update
-- Optional persistent history ranking
-- Optional icon support in candidate list
-- More LSP navigation actions
+- TRC20: `TR7s5Edfdh9wkYw4xEyk7uAVyV7Qm9yA1X`
+- ERC20: `0xe1c6864fdddcef5b5c63b2ea62af91395b569e36`
+- BTC: `1Eu1bniUn1oot55RcRCj2q5QJwa4GtBkk7`
 
 ## License
 
