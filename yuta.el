@@ -1,6 +1,6 @@
 ;;; yuta.el --- Yuta fuzzy finder + IDE command system -*- lexical-binding: t -*-
 
-;; Author: Mehedi
+;; Author: Zenitsu
 ;; Version: 1.0.0
 ;; Package-Requires: ((emacs "27.1"))
 ;; Keywords: files, search, navigation, fuzzy
