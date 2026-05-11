@@ -1046,7 +1046,8 @@ Uses fzf for large repos, Emacs mode for small ones."
   (interactive)
   (let* ((root (yuta--project-root))
          (cmd  (if (yuta--executable-p yuta-fd-executable)
-                   (format "fd --type f --hidden --follow --exclude .git . %s"
+                   (format "%s --type f --hidden --follow --exclude .git . %s"
+                           yuta-fd-executable
                            (shell-quote-argument root))
                  (format "find %s -type f -not -path '*/.git/*'"
                          (shell-quote-argument root)))))
@@ -1085,7 +1086,8 @@ Uses fzf for large repos, Emacs mode for small ones."
      nil
      (lambda (pattern)
        (if (yuta--executable-p yuta-rg-executable)
-           (format "rg --color=never --line-number --no-heading -S -e %s %s | head -n %d"
+           (format "%s --color=never --line-number --no-heading -S -e %s %s | head -n %d"
+                   yuta-rg-executable
                    (shell-quote-argument pattern)
                    (shell-quote-argument root)
                    yuta-live-grep-max-results)
